@@ -1,199 +1,438 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>애니 매니아 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="연남 가라오케 찐후기 – 진짜 연남동 사람들이 추천하는 가성비 가라오케. 발라드부터 트로트까지 무제한, 저렴한 가격에 맘껏 즐겨요. 전화 010-6279-0862">
+  <meta name="keywords" content="연남 가라오케, 연남동 가라오케, 연남 가라오케 찐후기, 연남 노래방, 홍대 가라오케, 가성비 가라오케, 연남 모임">
+  <meta name="author" content="연남 가라오케 찐후기">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://t3b01-yn-karaoke-real2.pages.dev">
+  <meta property="og:title" content="연남 가라오케 찐후기 – 연남동 No.1 가성비 가라오케">
+  <meta property="og:description" content="연남 가라오케 찐후기만 모아봤어요. 실제 방문자들의 생생한 리뷰, 저렴한 가격, 자유로운 분위기. 지금 전화주세요!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://t3b01-yn-karaoke-real2.pages.dev">
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect fill='%23000' width='800' height='400'/%3E%3Ctext x='50%25' y='50%25' fill='%23ff3b00' font-size='80' font-family='Impact' text-anchor='middle' dy='.3em'%3E연남🎤%3C/text%3E%3C/svg%3E">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="연남 가라오케 찐후기">
+  <meta name="twitter:description" content="연남 가라오케 찐후기 – 진짜 연남 사람들이 인정한 가라오케">
+  <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect fill='%23000' width='800' height='400'/%3E%3Ctext x='50%25' y='50%25' fill='%23ff3b00' font-size='80' font-family='Impact' text-anchor='middle' dy='.3em'%3E연남🎤%3C/text%3E%3C/svg%3E">
+  <meta name="bpaas-design-system" content="brutalist-avantgarde">
+  <meta name="bpaas-design-theme" content="kr-neon-void">
+  <title>연남 가라오케 찐후기 – 연남동 가성비 가라오케</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EntertainmentBusiness",
+    "name": "연남 가라오케 찐후기",
+    "alternateName": "연남동 가라오케",
+    "description": "연남동 대표 가성비 가라오케. 실제 방문자들의 찐후기로 유명한 곳.",
+    "telephone": "010-6279-0862",
+    "url": "https://t3b01-yn-karaoke-real2.pages.dev",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "서울",
+      "addressRegion": "마포구",
+      "addressCountry": "KR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "bestRating": "5",
+      "reviewCount": "127"
+    },
+    "priceRange": "₩10,000~₩20,000"
+  }
+  </script>
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    /* RESET & BASE */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+      background: #000;
+      color: #fff;
+      font-family: Impact, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.3;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
+
+    /* TYPOGRAPHY */
+    h1, h2, h3, h4 {
+      font-family: Impact, system-ui, sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
     }
+    h1 { font-size: clamp(3.2rem, 12vw, 6rem); line-height: 0.9; }
+    h2 { font-size: clamp(2.4rem, 8vw, 4rem); }
+    h3 { font-size: clamp(1.6rem, 5vw, 2.6rem); }
+    p, li { font-family: system-ui, -apple-system, sans-serif; font-weight: 400; }
+    a { color: inherit; text-decoration: none; }
+
+    /* LAYOUT – SPACE: airy */
+    .container { padding: 72px 24px; max-width: 1200px; margin: 0 auto; }
+    section { margin-bottom: 120px; }
+    .gap-48 { margin-bottom: 48px; }
+
+    /* STREET BRUTALIST ELEMENTS */
+    .brutal-border {
+      border: 4px solid #fff;
+      border-radius: 0;
+      box-shadow: 6px 6px 0 #ff3b00;
+    }
+    .brutal-border-accent {
+      border: 4px solid #ff3b00;
+      border-radius: 0;
+      box-shadow: 6px 6px 0 #fff;
+    }
+    .skewed {
+      transform: rotate(-2deg);
+      display: inline-block;
+    }
+    .skewed-right {
+      transform: rotate(1.5deg);
+    }
+    .oversized { font-size: 4.5rem; line-height: 0.85; letter-spacing: -0.04em; }
+    .negative-margin { margin-left: -24px; margin-right: -24px; }
+    .full-bleed { width: 100vw; margin-left: calc(50% - 50vw); }
+    .bg-texture {
+      background-image: repeating-linear-gradient(45deg, rgba(255,59,0,0.08) 0px, rgba(255,59,0,0.08) 4px, transparent 4px, transparent 8px);
+    }
+
+    /* COLORS */
+    .accent { color: #ff3b00; }
+    .bg-accent { background-color: #ff3b00; color: #000; }
+    .bg-black { background-color: #000; }
+    .bg-white { background-color: #fff; color: #000; }
+
+    /* HEADER & NAV */
     header {
+      padding: 24px 24px 12px;
+      border-bottom: 4px solid #ff3b00;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 60px;
+      flex-wrap: wrap;
+      gap: 16px;
     }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
+    .logo {
+      font-size: 2.2rem;
+      line-height: 1;
       letter-spacing: -0.02em;
     }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
+    .logo span { color: #ff3b00; }
+
+    /* 햄버거 메뉴 */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: 3px solid #fff;
+      padding: 8px 12px;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+      line-height: 1;
     }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
+    .nav-menu {
       display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
+      gap: 32px;
+      list-style: none;
+      align-items: center;
+      flex-wrap: wrap;
     }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
+    .nav-menu a {
+      font-family: Impact, system-ui, sans-serif;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-bottom: 3px solid transparent;
+      transition: 0.15s;
     }
+    .nav-menu a:hover { border-bottom-color: #ff3b00; color: #ff3b00; }
+    .nav-menu .tel-highlight {
+      background: #ff3b00;
+      color: #000;
+      padding: 6px 18px;
+      border: 3px solid #fff;
+      font-size: 1.5rem;
+    }
+    .nav-menu .tel-highlight:hover { background: #fff; border-color: #ff3b00; color: #000; }
+
+    /* HERO */
+    .hero {
+      padding: 48px 24px 24px;
+      background: #000;
+      border-bottom: 6px solid #ff3b00;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 60%;
+      height: 140%;
+      background: repeating-linear-gradient(-25deg, transparent, transparent 40px, rgba(255,59,0,0.12) 40px, rgba(255,59,0,0.12) 44px);
+      pointer-events: none;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1000px;
+    }
+    .hero h1 {
+      margin-bottom: 24px;
+      text-shadow: 4px 4px 0 #ff3b00;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      max-width: 720px;
+      margin-bottom: 32px;
+      line-height: 1.4;
+      font-weight: 300;
+    }
+    .hero-cta {
+      display: inline-block;
+      background: #ff3b00;
+      color: #000;
+      padding: 18px 48px;
+      font-family: Impact, system-ui, sans-serif;
+      font-size: 2rem;
+      border: 4px solid #fff;
+      box-shadow: 6px 6px 0 #fff;
+      text-transform: uppercase;
+      transition: 0.2s;
+    }
+    .hero-cta:hover {
+      background: #fff;
+      border-color: #ff3b00;
+      box-shadow: 6px 6px 0 #ff3b00;
+      transform: translate(-2px, -2px);
+    }
+
+    /* REVIEW CARDS */
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 48px;
+      margin-top: 48px;
+    }
+    .review-card {
+      background: #000;
+      border: 4px solid #ff3b00;
+      padding: 32px 28px;
+      box-shadow: 8px 8px 0 #fff;
+      transition: 0.2s;
+      position: relative;
+    }
+    .review-card:hover {
+      transform: translate(-4px, -4px);
+      box-shadow: 12px 12px 0 #ff3b00;
+    }
+    .review-card .stars {
+      font-size: 1.8rem;
+      letter-spacing: 4px;
+      margin-bottom: 12px;
+    }
+    .review-card blockquote {
+      font-family: system-ui, sans-serif;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-bottom: 16px;
+      font-style: normal;
+    }
+    .review-card cite {
+      display: block;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1rem;
+      color: #ff3b00;
+    }
+    .review-card .date {
+      font-size: 0.85rem;
+      opacity: 0.7;
+      display: block;
+      margin-top: 4px;
+    }
+
+    /* INFO SECTION */
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px 72px;
+      border-top: 6px solid #ff3b00;
+      padding-top: 48px;
+    }
+    .info-item {
+      border-left: 6px solid #ff3b00;
+      padding-left: 24px;
+    }
+    .info-item h3 {
+      margin-bottom: 12px;
+      font-size: 1.8rem;
+    }
+    .info-item p, .info-item a {
+      font-size: 1.3rem;
+      line-height: 1.4;
+    }
+    .info-item a { text-decoration: underline; text-underline-offset: 4px; }
+    .info-item a:hover { color: #ff3b00; }
+
+    /* CTA SECTION */
+    .cta-block {
+      background: #ff3b00;
+      padding: 72px 24px;
+      text-align: center;
+      border-top: 6px solid #fff;
+      border-bottom: 6px solid #fff;
+    }
+    .cta-block h2 {
+      color: #000;
+      font-size: 3.2rem;
+      margin-bottom: 24px;
+    }
+    .cta-block .cta-phone {
+      display: inline-block;
+      background: #000;
+      color: #ff3b00;
+      padding: 18px 56px;
+      font-size: 2.4rem;
+      font-family: Impact, system-ui, sans-serif;
+      border: 4px solid #fff;
+      box-shadow: 8px 8px 0 #000;
+      transition: 0.2s;
+    }
+    .cta-block .cta-phone:hover {
+      background: #fff;
+      color: #000;
+      border-color: #000;
+      box-shadow: 8px 8px 0 #ff3b00;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 4px solid #fff;
+      padding: 48px 24px;
+      text-align: center;
+      background: #000;
+    }
+    footer p {
+      font-size: 1rem;
+      opacity: 0.7;
+      font-family: system-ui, sans-serif;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .container { padding: 48px 16px; }
+      section { margin-bottom: 80px; }
+      .nav-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+        padding: 24px 0 12px;
+        border-top: 3px solid #ff3b00;
+        margin-top: 12px;
+      }
+      .nav-menu.open { display: flex; }
+      .nav-toggle { display: block; }
+      .nav-menu a { font-size: 1.6rem; }
+      .hero h1 { font-size: 3.6rem; }
+      .hero p { font-size: 1.2rem; }
+      .hero-cta { font-size: 1.5rem; padding: 14px 32px; }
+      .review-grid { grid-template-columns: 1fr; gap: 36px; }
+      .info-grid { grid-template-columns: 1fr; gap: 36px; }
+      .cta-block h2 { font-size: 2.2rem; }
+      .cta-block .cta-phone { font-size: 1.8rem; padding: 14px 32px; }
+      .oversized { font-size: 3rem; }
+      .negative-margin { margin-left: 0; margin-right: 0; }
+    }
+
+    @media (max-width: 480px) {
+      .logo { font-size: 1.6rem; }
+      .hero h1 { font-size: 2.8rem; }
+      .review-card { padding: 24px 16px; }
+    }
+
+    /* UTILS */
+    .text-center { text-align: center; }
+    .inline-block { display: inline-block; }
+    .mt-48 { margin-top: 48px; }
+    .mb-24 { margin-bottom: 24px; }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>애니 매니아 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>애니 매니아</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
+  <header>
+    <div class="logo">연남<span>🎤</span> 찐후기</div>
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">☰</button>
+    <nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero">홈</a></li>
+        <li><a href="#reviews">리뷰</a></li>
+        <li><a href="#info">정보</a></li>
+        <li><a href="#cta" class="tel-highlight">📞 전화</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero full-bleed" id="hero">
+      <div class="hero-content">
+        <h1 class="skewed">연남<br>가라오케<br><span class="accent">찐후기</span></h1>
+        <p class="skewed-right">연남동에서 제일 솔직한 후기. <br>가성비 · 자유로운 분위기 · 무제한 노래<br>진짜 연남 사람들이 인정한 곳이에요.</p>
+        <a href="tel:010-6279-0862" class="hero-cta">🔥 지금 전화 010-6279-0862</a>
       </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h3>
-          <p>90년대 셀 애니메이션 제작 시 빛이 뿌옇게 흐려지거나 번지는 몽환적인 효과를 내기 위해 투명 셀판 아래에 부드러운 백라이트를 대고 조리개를 조절해 이중 노출로 촬영하던 촬영 스튜...</p>
-        </a>
-      
+    </section>
 
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h3>
-          <p>수많은 이세계 판타지 만화와 애니메이션에서 세계관의 핵심 축으로 등장하는 세계수 위그드라실 전승은 현대 서브컬처에 이르러 단순한 물리적 나무가 아닌 가상 데이터 그리드나 다차원 통...</p>
-        </a>
-      
+    <!-- REVIEWS -->
+    <section id="reviews" class="container">
+      <h2 class="oversized negative-margin">🎤 찐후기<br><span class="accent">모아보기</span></h2>
+      <p class="gap-48" style="font-size:1.3rem;">실제로 다녀간 사람들의 생생한 목소리만 모았어요. 별점은 5점 만점!</p>
 
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h3>
-          <p>디즈니의 풀 애니메이션(초당 24장)에 대비되는 동양 리미티드 애니메이션의 정수인 3코마 작화법(초당 8장 기법)은 프레임의 부족함을 독창적인 프레임 홀드 타이밍과 과장된 정지 컷...</p>
-        </a>
-      
+      <div class="review-grid">
+        <!-- 리뷰 1 -->
+        <article class="review-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>
+            “진짜 가성비 미쳤어요. 2시간에 만원도 안 하고 완전 자유분위기. 친구들이랑 밤새도록 놀았네요. 완전 강추!”
+          </blockquote>
+          <cite>연남맘92 <span class="date">2025.01.18</span></cite>
+        </article>
 
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
+        <!-- 리뷰 2 -->
+        <article class="review-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>
+            “연남에서 제일 분위기 좋은 가라오케. 사장님이 진짜 친절하시고, 노래방 기계도 최신이에요. 완전 만족!”
+          </blockquote>
+          <cite>karaoke_king <span class="date">2024.12.28</span></cite>
+        </article>
 
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>애니 작화 마니아들이 강력히 추천하는 백링크 자동화 프로그램 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
-  </div>
+        <!-- 리뷰 3 -->
+        <article class="review-card">
+          <div class="stars">⭐⭐⭐⭐</div>
+          <blockquote>
+            “처음 가봤는데 생각보다 깔끔하고 좋았어요. 트로트도 많고, 가격도 저렴. 단체로 가기 딱이에요.”
+          </blockquote>
+          <cite>목요일밤의꿈 <span class="date">2025.02.03</span></cite>
+        </article>
+
+        <!-- 리뷰 4 -->
+        <article class="review-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>
+            “발라드 좋아하는 사람은 여기 꼭 가세요. 음질도 좋고, 조명도 감성적이에요. 데이트 코스로도 완전 추천!”
+          </blockquote>
+          <cite>달토끼 <span class="date">2025.01.25</span></cite>
+        </article>
+
+        <!-- 리뷰 5 -->
+        <article
 </body>
 </html>
